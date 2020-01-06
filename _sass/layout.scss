@@ -1,7 +1,7 @@
 .container, .text-container {
 	margin: 0 auto;
 	position: relative;
-	padding: 0 20px;
+	padding: 0 5px;
 }
 
 .text-container {
@@ -69,7 +69,7 @@ header {
 }
 
 section {
-	padding: 100px 0;
+	padding: 10px 0;
 }
 
 section + section {
@@ -83,7 +83,7 @@ section + section {
 
 
 .cta {
-	margin: 60px 0;
+	margin: 16px 0;
 }
 
 .page h2 {
@@ -137,9 +137,25 @@ blockquote:before {
 	}
 }
 
+.iframe-container {
+  overflow: hidden;
+  // Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625)
+  padding-top: 56.25%;
+  position: relative;
+}
+ 
+.iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+
 .page {
 	margin-bottom: 0;
-	padding-bottom: 80px;
+	padding-bottom: 8px;
 }
 
 .center-text {
